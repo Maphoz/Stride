@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature android:name="android.hardware.sensor.stepdetector"/>
+    <uses-feature android:name="android.hardware.sensor.stepcounter"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer"/>
+
+
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BODY_SENSORS"/>
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS"/>
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_logo_big"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <service
+            android:name=".StepService"
+            android:permission="android.permission.FOREGROUND_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location"/>
+        <service
+            android:name=".DrivingService"
+            android:permission="android.permission.FOREGROUND_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location"/>
+        <service
+            android:name=".SittingService"
+            android:permission="android.permission.FOREGROUND_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="health"/>
+        <service
+            android:name=".BackgroundStepService"
+            android:enabled="true"
+            android:permission="android.permission.FOREGROUND_SERVICE"
+            android:exported="false"
+            android:foregroundServiceType="location"/>
+        <service
+            android:name=".BackgroundDrivingService"
+            android:permission="android.permission.FOREGROUND_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location"/>
+        <service
+            android:name=".BackgroundSittingService"
+            android:permission="android.permission.FOREGROUND_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="health"/>
+        <service
+            android:name=".ActivityRecognitionService"
+            android:exported="false"
+            android:foregroundServiceType="location"/>
+        <receiver
+            android:name=".ActivityRecognitionReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyApplication">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyApplication">
+        </activity>
+        <activity
+            android:name=".TrackingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyApplication">
+        </activity>
+    </application>
+
+</manifest>
