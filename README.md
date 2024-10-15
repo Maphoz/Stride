@@ -61,7 +61,7 @@ This allows for flexible analysis and makes it easy to focus on specific activit
 
 <div align="center">
   <img src="resources/sort.jpeg" alt="Sort and Filter" width="200" />
-  <img src="resources/filter" alt="Sort and Filter" width="200" />
+  <img src="resources/filter.jpeg" alt="Sort and Filter" width="200" />
 </div>
 
 ### Local Storage with Room Database
