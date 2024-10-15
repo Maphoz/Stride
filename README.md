@@ -6,17 +6,12 @@ Welcome to **Stride**, a comprehensive fitness tracking app designed for Android
 
 Here are a few screenshots to give you a glimpse of Stride in action:
 
-- **Home Screen**  
-  ![Home Screen](resources/screen_home.jpeg)
-  
-- **Sorting and Filtering**  
-  ![Sorting and Filtering](resources/sort.jpeg)
-
-- **Activity Tracking with Charts**  
-  ![Activity Chart Overview](resources/chart_4.jpeg)
-  
-- **Activity Details**  
-  ![Activity Details](resources/act_3.jpeg)
+<div align="center">
+  <img src="resources/screen_home.jpeg" alt="Home Screen" width="250" />
+  <img src="resources/sort.jpeg" alt="Sorting and Filtering" width="250" />
+  <img src="resources/chart_4.jpeg" alt="Activity Chart Overview" width="250" />
+  <img src="resources/act_3.jpeg" alt="Activity Details" width="250" />
+</div>
 
 ---
 
@@ -33,10 +28,11 @@ Stride tracks four different types of physical activities:
 
 You can record activities manually or let Stride automatically detect them in the background using Android’s **ACTIVITY_RECOGNITION_API**. This allows for seamless tracking without constant user intervention.
 
-- **Track your activities  with map functionality**  
-  ![Activity Recognition](resources/track_1.jpeg)
-  ![Detailed Activity View](resources/act_1.jpeg)  
-  ![Tracked Activities](resources/act_2.jpeg)
+<div align="center">
+  <img src="resources/track_1.jpeg" alt="Activity Recognition" width="250" />
+  <img src="resources/act_1.jpeg" alt="Detailed Activity View" width="250" />
+  <img src="resources/act_2.jpeg" alt="Tracked Activities" width="250" />
+</div>
 
 ### Charts & Data Visualization
 
@@ -48,11 +44,10 @@ Stride provides a rich set of charts to visualize your activity data, helping yo
 
 Charts are built using **Vico** and **MPAndroidChart** to ensure smooth performance and appealing visuals.
 
-- **Line and Bar Charts**  
-  ![Charts Overview](resources/chart_2.jpeg)
-  
-- **Pie Chart**  
-  ![Pie Chart View](resources/chart_3.jpeg)
+<div align="center">
+  <img src="resources/chart_2.jpeg" alt="Charts Overview" width="250" />
+  <img src="resources/chart_3.jpeg" alt="Pie Chart View" width="250" />
+</div>
 
 ### Sorting and Filtering
 
@@ -64,8 +59,9 @@ Stride makes it easy to manage and analyze your activity data by providing robus
 
 This allows for flexible analysis and makes it easy to focus on specific activity metrics.
 
-- **Sort and Filter Options**  
-  ![Sort and Filter](resources/sort.jpeg)
+<div align="center">
+  <img src="resources/sort.jpeg" alt="Sort and Filter" width="250" />
+</div>
 
 ### Local Storage with Room Database
 
@@ -80,9 +76,3 @@ All user data is stored locally using Android’s **Room Database**, ensuring fa
 - **MPAndroidChart & Vico** - Libraries for creating dynamic and interactive charts.
 - **ACTIVITY_RECOGNITION_API** - Used to track physical activities in the background.
 
----
-
-1. **Clone the Repository**
-
-   ```bash
-   git clone https://github.com/yourusername/Stride_Fitness_App.git
